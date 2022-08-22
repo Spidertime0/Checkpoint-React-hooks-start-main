@@ -9,10 +9,15 @@ import 'regenerator-runtime/runtime';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 import Root from './components/Root';
 
-const App = () => {
-  return <Root />;
-};
 
-ReactDOM.render(<App />, document.getElementById('app'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Root />);
+
+// const App = () => {
+//   return <Root />;
+// };
+
+// ReactDOM.render(<App />, document.getElementById('app'));
